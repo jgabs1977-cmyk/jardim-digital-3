@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jardim Digital — pensamentos cultivados</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+<div class="navwrap">
+<a class="brand" href="#" onclick="goHome();return false"><span class="brand-mark">🌿</span> Jardim Digital</a>
+<nav aria-label="Navegação principal">
+<button class="active" data-page="inicio">Início</button><button data-page="sementes">Sementes</button><button data-page="mudas">Mudas</button><button data-page="arvores">Árvores</button><button data-page="todos">Colheita</button>
+</nav>
+</div>
+</header>
+<main>
+<section class="hero" id="hero">
+<div>
+<div class="eyebrow">Um jardim de ideias e descobertas</div>
+<h1>Todo conteúdo<br>pode criar raízes.</h1>
+<p>Pequenos vídeos, grandes reflexões. Um espaço onde o que encontro na internet se transforma em palavras, memórias e aprendizados.</p>
+</div>
+<div class="hero-art"><div class="art-leaf">🌱</div><div class="art-caption">CULTIVAR • REFLETIR • COMPARTILHAR</div></div>
+</section>
+<section class="intro" id="intro">
+<div class="intro-card">
+<h2>Sobre o Jardim Digital</h2>
+<p>O Jardim Digital é um projeto apresentado pela professora <strong>Maria Luiza Tapias Oliveira</strong>, que convida a olhar para os conteúdos que aparecem nas redes, vídeos, filmes, músicas e outras experiências do cotidiano com mais atenção. A proposta é transformar aquilo que consumimos em reflexão: perceber o que nos desperta curiosidade, o que se conecta com nossas vivências e o que nos faz pensar sobre o mundo. Aqui, cada anotação é como uma planta em diferentes estágios de crescimento — algumas começam como uma ideia rápida, outras se desenvolvem e algumas criam raízes profundas em textos mais longos.</p>
+</div>
+</section>
+<section class="section" id="library" hidden>
+<div class="section-head"><div><div class="eyebrow">Biblioteca de reflexões</div><h2 id="section-title">Sementes</h2></div>
+<div class="searchbox"><span>⌕</span><input id="search" type="search" placeholder="Pesquisar por título, tema ou palavra..."></div></div>
+<div class="toolbar" id="period-filters"></div>
+<div class="cards" id="cards"></div>
+</section>
+</main>
+<footer class="footer">Jardim Digital · João Gabriel Badaró · 2A<br>Um lugar para ideias germinarem.</footer>
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+<div class="modal-box"><div class="modal-header"><div><div class="eyebrow" id="modal-tag"></div><h2 id="modal-title"></h2></div><button class="close" aria-label="Fechar" id="close">×</button></div>
+<div class="meta" id="modal-meta"></div><div class="keywords" id="modal-keywords"></div><div class="modal-text" id="modal-text"></div><div class="source" id="modal-source"></div><div class="notice" id="incomplete-note" hidden>Este registro está incompleto no arquivo original enviado; o site preserva apenas o trecho disponível.</div>
+</div></div>
+<script src="script.js" defer></script>
+</body></html>
